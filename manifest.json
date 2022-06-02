@@ -1,0 +1,25 @@
+{
+  "name": "Github Shortcut",
+  "action": {
+    "default_icon": "logo.jpeg"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Copy url title, description to clipboard",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "MacCtrl+Shift+P"
+      },
+      "description": "Run extension."
+    }
+  }
+}
